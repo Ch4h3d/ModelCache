@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build-job:
+  stage: build
+  tags:
+      - build
+  script:
+    - echo "Update generate properties."
+    - pwsh -File GenerateProps.ps1 ./ "alpha"
+    - echo "$NXS_API_URL"
+    - pwsh -File publishNuget.ps1 "Debug" $NXS_API_URL $NXS_API_KEY

@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<PackageVersion></PackageVersion>
+		<AssemblyVersion></AssemblyVersion>
+		<FileVersion></FileVersion>
+		<InformationalVersion></InformationalVersion>
+	</PropertyGroup>
+</Project>
